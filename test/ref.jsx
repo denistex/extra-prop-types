@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import React from 'react';
-import ifReact from 'enzyme-adapter-react-helper/build/ifReact';
+import ifReact from './ifReact';
 
 import { ref } from '..';
 

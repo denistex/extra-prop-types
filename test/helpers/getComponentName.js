@@ -1,6 +1,6 @@
 import React from 'react';
 import { expect } from 'chai';
-import ifReact from 'enzyme-adapter-react-helper/build/ifReact';
+import ifReact from '../ifReact';
 import getComponentName from '../../build/helpers/getComponentName';
 
 const itIfReact = (version, ...args) => ifReact(version, () => it(...args), () => it.skip(...args));
