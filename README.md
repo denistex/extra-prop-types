@@ -1,14 +1,16 @@
-# prop-types <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
+<div align="center">
+  <br>
+  <img width="720" src="media/logo.svg" alt="extra-prop-types">
+  <br>
+  <br>
+  <br>
+</div>
 
-[![Build Status][travis-svg]][travis-url]
-[![dependency status][deps-svg]][deps-url]
-[![dev dependency status][dev-deps-svg]][dev-deps-url]
+[![Version Badge][npm-version-svg]][package-url]
 [![License][license-image]][license-url]
 [![Downloads][downloads-image]][downloads-url]
 
-[![npm badge][npm-badge-png]][package-url]
-
-Custom React PropType validators that we use at Airbnb. Use of [airbnb-js-shims](https://npmjs.com/package/airbnb-js-shims) or the equivalent is recommended.
+This is a fork of [airbnb/prop-types](https://github.com/airbnb/prop-types). Use of [airbnb-js-shims](https://npmjs.com/package/airbnb-js-shims) or the equivalent is recommended.
 
  - `and`: ensure that all provided propType validators pass
    - `foo: and([number, nonNegativeInteger])`
@@ -92,21 +94,16 @@ Custom React PropType validators that we use at Airbnb. Use of [airbnb-js-shims]
    - `foo: withShape(array, { length: oneOf([2]) })`
 
 ## Production
+
 Since `PropTypes` are typically not included in production builds of React, this library’s functionality serves no useful purpose. As such, when the `NODE_ENV` environment variable is `"production"`, instead of exporting the implementations of all these prop types, we export mock functions - in other words, something that ensures that no exceptions are thrown, but does no validation. When environment variables are inlined (via a browserify transform or webpack plugin), then tools like webpack or uglify are able to determine that only the mocks will be imported - and can avoid including the entire implementations in the final bundle that is sent to the browser. This allows for a much smaller ultimate file size, and faster in-browser performance, without sacrificing the benefits of `PropTypes` themselves.
 
 ## Tests
+
 Clone the repo, `npm install`, and run `npm test`
 
-[package-url]: https://npmjs.org/package/airbnb-prop-types
-[npm-version-svg]: http://versionbadg.es/airbnb/prop-types.svg
-[travis-svg]: https://travis-ci.org/airbnb/prop-types.svg
-[travis-url]: https://travis-ci.org/airbnb/prop-types
-[deps-svg]: https://david-dm.org/airbnb/prop-types.svg
-[deps-url]: https://david-dm.org/airbnb/prop-types
-[dev-deps-svg]: https://david-dm.org/airbnb/prop-types/dev-status.svg
-[dev-deps-url]: https://david-dm.org/airbnb/prop-types#info=devDependencies
-[npm-badge-png]: https://nodei.co/npm/airbnb-prop-types.png?downloads=true&stars=true
-[license-image]: http://img.shields.io/npm/l/airbnb-prop-types.svg
+[package-url]: https://npmjs.org/package/@denistex/extra-prop-types
+[npm-version-svg]: https://img.shields.io/npm/v/%40denistex%2Fextra-prop-types?style=for-the-badge
+[license-image]: http://img.shields.io/npm/l/%40denistex%2Fextra-prop-types?style=for-the-badge
 [license-url]: LICENSE
-[downloads-image]: http://img.shields.io/npm/dm/airbnb-prop-types.svg
-[downloads-url]: http://npm-stat.com/charts.html?package=airbnb-prop-types
+[downloads-image]: https://img.shields.io/npm/dm/%40denistex%2Fextra-prop-types?style=for-the-badge
+[downloads-url]: http://npm-stat.com/charts.html?package=@denistex/extra-prop-types

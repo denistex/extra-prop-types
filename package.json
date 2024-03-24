@@ -1,7 +1,7 @@
 {
-  "name": "airbnb-prop-types",
-  "version": "2.16.0",
-  "description": "Custom React PropType validators that we use at Airbnb.",
+  "name": "@denistex/extra-prop-types",
+  "version": "0.0.1",
+  "description": "Extra React PropType Validators",
   "main": "index.js",
   "dependencies": {
     "array.prototype.find": "^2.1.1",
@@ -34,13 +34,13 @@
     "nyc": "^10.3.2",
     "object-inspect": "^1.8.0",
     "object.values": "^1.1.1",
-    "react": "^0.14 || ^15.0.0 || ^16.0.0-alpha || ^17",
+    "react": "^0.14 || ^15.0.0 || ^16.0.0-alpha || ^17 || ^18",
     "reflect.ownkeys": "^1.0.1",
     "rimraf": "^2.7.1",
     "safe-publish-latest": "^1.1.4"
   },
   "peerDependencies": {
-    "react": "^0.14 || ^15.0.0 || ^16.0.0-alpha || ^17"
+    "react": "^0.14 || ^15.0.0 || ^16.0.0-alpha || ^17 || ^18"
   },
   "scripts": {
     "pretest": "npm run lint",
@@ -67,26 +67,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/airbnb/prop-types.git"
+    "url": "git+https://github.com/denistex/extra-prop-types.git"
   },
   "keywords": [
     "react",
     "propTypes",
-    "airbnb",
     "prop",
     "types",
     "validator",
     "validation"
   ],
-  "author": "Jordan Harband <ljharb@gmail.com>",
+  "author": "Denis T <denistex.dev@gmail.com>",
   "funding": {
     "url": "https://github.com/sponsors/ljharb"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/airbnb/prop-types/issues"
+    "url": "https://github.com/denistex/extra-prop-types/issues"
   },
-  "homepage": "https://github.com/airbnb/prop-types#readme",
+  "homepage": "https://github.com/denistex/extra-prop-types#readme",
   "greenkeeper": {
     "//": "nyc and mocha are ignored because they requires node 4+, and we support older than that",
     "ignore": [
